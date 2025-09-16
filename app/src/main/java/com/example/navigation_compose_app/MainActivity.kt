@@ -98,7 +98,7 @@ fun AppNavHost(navController: NavHostController) {
 
 @Composable
 fun LoginScreen(onLoginSuccess: (String) -> Unit) {
-    Column(modifier = Modifier.fillMaxSize().padding(16.dp)) {
+    Column(modifier = Modifier.fillMaxSize().padding(100.dp)) {
         Button(onClick = { onLoginSuccess("Suhani") }) {
             Text("Login as Suhani")
         }
@@ -109,7 +109,7 @@ fun LoginScreen(onLoginSuccess: (String) -> Unit) {
 
 @Composable
 fun HomeScreen(username: String,onItemClick: (Int) -> Unit) {
-    Column (modifier = Modifier.fillMaxSize().padding(16.dp)){
+    Column (modifier = Modifier.fillMaxSize().padding(100.dp)){
         Text(text = "Welcome, $username" , fontSize = 22.sp )
 
         Spacer(modifier = Modifier.height(12.dp))
@@ -134,9 +134,9 @@ fun HomeScreen(username: String,onItemClick: (Int) -> Unit) {
 //detailscreen
 @Composable
 fun DetailScreen(itemId: Int) {
-    Column (
-        modifier = Modifier.fillMaxSize().padding(16.dp)
-    ){
+    Column(
+        modifier = Modifier.fillMaxSize().padding(100.dp)
+    ) {
         Text(text = "Detail Screen for Item $itemId", fontSize = 22.sp)
 
     }
